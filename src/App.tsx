@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import CardView from "./СardView/СardView";
 import CardDeck from "./lib/CardDeck";
 import Card from "./lib/Card";
@@ -17,7 +17,7 @@ const App = () => {
         const cardDeck = new CardDeck();
         const newCards = cardDeck.getCards(5);
         setCards(newCards);
-    }
+    };
 
     if (cards.length === 0) {
         return (
